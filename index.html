@@ -3,7 +3,7 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script>
-    var sites = [
+    var lucky = [
         'https://www.google.co.uk',
         'https://www.gnoosic.com',
         'https://10minutemail.com',
@@ -30,8 +30,68 @@
     ];
 
     function randomSite() {
-        var i = parseInt(Math.random() * sites.length);
-        location.href = sites[i];
+        var i = parseInt(Math.random() * lucky.length);
+        location.href = lucky[i];
+    }
+    var social = [
+        'https://www.google.co.uk',
+        'https://www.gnoosic.com',
+        'https://10minutemail.com',
+        'http://www.youtube.com',
+        'https://riverstyx.com',
+        'https://camelcamelcamel.com',
+        'https://www.geoguessr.com',
+        'http://www.thisismywebsitenow.com',
+        'https://www.theonion.com',
+        'https://www.naturalreaders.com',
+        'https://www.howstuffworks.com',
+        'https://www.worldhistory.org',
+        'http://radio.garden',
+        'https://www.window-swap.com',
+        'https://www.futureme.org',
+        'https://www.deepl.com/en/translator',
+        'https://thenounproject.com',
+        'https://www.all8.com/tools/bpm.htm',
+        'https://futureboy.us/fsp/dollar.fsp',
+        'https://www.amazon.com',
+        'https://www.foodnetwork.com',
+        'https://www.zoom.com',
+        'https://www.cnet.com/',
+    ];
+
+    function socialSite() {
+        var i = parseInt(Math.random() * social.length);
+        location.href = social[i];
+    }
+    var recent = [
+        'https://www.google.co.uk',
+        'https://www.gnoosic.com',
+        'https://10minutemail.com',
+        'http://www.youtube.com',
+        'https://riverstyx.com',
+        'https://camelcamelcamel.com',
+        'https://www.geoguessr.com',
+        'http://www.thisismywebsitenow.com',
+        'https://www.theonion.com',
+        'https://www.naturalreaders.com',
+        'https://www.howstuffworks.com',
+        'https://www.worldhistory.org',
+        'http://radio.garden',
+        'https://www.window-swap.com',
+        'https://www.futureme.org',
+        'https://www.deepl.com/en/translator',
+        'https://thenounproject.com',
+        'https://www.all8.com/tools/bpm.htm',
+        'https://futureboy.us/fsp/dollar.fsp',
+        'https://www.amazon.com',
+        'https://www.foodnetwork.com',
+        'https://www.zoom.com',
+        'https://www.cnet.com/',
+    ];
+
+    function recentSite() {
+        var i = parseInt(Math.random() * recent.length);
+        location.href = recent[i];
     }
 </script>
 <style>
@@ -105,16 +165,16 @@ img {vertical-align: middle;}
 <div class="slideshow-container">
 
 <div class="mySlides fade">
-  <img src="img_nature_wide.jpg" style="width:100%"><div class="text"><a href="#" onclick="randomSite();" style="color:orange;"><img src="https://raw.githubusercontent.com/piper-AI/sqatnews/main/logoportsl.png" alt="SQ@portal" style="width:200px;height:70px;"></a></div></div>
+  <img src="img_nature_wide.jpg" style="width:100%">
+    <div class="text"><a href="#" onclick="randomSite();"><img src="" alt="logo" style="width:200px;height:70px;"></a></div></div>
 
 <div class="mySlides fade">
   <img src="img_snow_wide.jpg" style="width:100%">
-  <div class="text">Caption Two</div>
-</div>
+    <div class="text"><a href="#" onclick="recentSite();"><img src="" alt="recent" style="width:200px;height:70px;"></a></div></div>
 
 <div class="mySlides fade">
   <img src="img_mountains_wide.jpg" style="width:100%">
-  <div class="text">Caption Three</div>
+    <div class="text"><a href="#" onclick="socialSite();"><img src="" alt="social" style="width:200px;height:70px;"></a></div></div>
 </div>
 
 </div>
